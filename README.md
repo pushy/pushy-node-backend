@@ -34,7 +34,7 @@ npm start
 
 ## API Endpoints
 
-> Note: All requests are `GET` requests to make it easy to execute them from a web browser.
+> Note: All requests are `GET` requests to make it easy to execute them from a web browser for testing.
 
 ### GET /
 
@@ -46,7 +46,7 @@ Register a device for notifications. Execute this request from your mobile app, 
 
 ### GET /push
 
-Send a test notification to all registered devices:
+Send a test notification to all registered devices, with the following payload:
 
 ```json
 {"message": "Hello World!"}
@@ -63,7 +63,9 @@ This request will throw an error if no devices have been registered yet, or if t
 To actually use this in production, consider the following:
 
 1) Modify the push payload with data specific to your application
+
 2) Modify the persistence layer to utilize a real database, such as [MongoDB](https://www.mongodb.com/)
+
 3) Modify the push endpoint to only send notifications to specific devices, based on app-specific criteria
 
 ## License
