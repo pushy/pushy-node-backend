@@ -1,0 +1,16 @@
+{
+  "name": "pushy-node-backend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A basic Node.js REST API built with Express for registering devices and sending push notifications with Pushy.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Pushy <support@pushy.me>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pushy-node": "^1.0.7"
+  }
+}
