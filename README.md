@@ -64,9 +64,9 @@ To actually use this in production, consider the following:
 
 1) Modify the push payload with data specific to your application
 
-2) Modify the persistence layer to utilize a real database, such as [MongoDB](https://www.mongodb.com/)
+2) Modify the [persistence layer](util/db.js) to utilize a real database, such as [MongoDB](https://www.mongodb.com/)
 
-3) Modify the push endpoint to only send notifications to specific devices, based on app-specific criteria
+3) Modify the `/push` endpoint to only send notifications to specific devices, based on app-specific criteria
 
 ## License
 
